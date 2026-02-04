@@ -12,6 +12,6 @@ public:
                 end = mid;
             }
         }
-        return st;
+        return end;
     }
 };
