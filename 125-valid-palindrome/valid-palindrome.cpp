@@ -8,19 +8,13 @@ bool isValid(char ch){
 }
     bool isPalindrome(string s) {
       int st = 0;
-      int end = s.size()-1;
-      if(s == " "){
-        return true;
-      }
-        
+      int end = s.size()-1;  
      while(st<end){
         while(st<end && !isValid(s[st])){
             st++;
-            continue;
             }
-            while(st<end && !isValid(s[end])){
+        while(st<end && !isValid(s[end])){
             end--;
-            continue;
             }
         if(tolower(s[st]) != tolower(s[end])){
             return false;
