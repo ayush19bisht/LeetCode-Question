@@ -13,7 +13,7 @@ public:
         
         int st = 1;
         int end = n;
-        while(st<end){
+        while(st<=end){
             int mid = st+(end-st)/2;
             if(guess(mid) == 0){
                 return mid;
