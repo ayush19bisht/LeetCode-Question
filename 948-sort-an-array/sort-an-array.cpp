@@ -33,6 +33,9 @@ public:
             mergeSort(arr , mid+1 , end);  //right half
             merge(arr , st , mid , end);
         }
+        if(st>=end){
+            return;
+        }
     }
     vector<int> sortArray(vector<int>& arr) {
         int st =0 ;
