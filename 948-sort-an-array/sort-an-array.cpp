@@ -34,7 +34,7 @@ public:
             merge(arr , st , mid , end);
         }
         if(st>=end){
-            return;
+            return;        //base condition without this also it will work
         }
     }
     vector<int> sortArray(vector<int>& arr) {
